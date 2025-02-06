@@ -1,0 +1,178 @@
+.exchange {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+
+.exchange form {
+  padding: 5px;
+  background-color: rgb(225, 225, 225);
+  border-radius: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 90px;
+}
+
+.exchange input {
+  flex: 1;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  background-color: rgb(225, 225, 225);
+}
+
+.exchange button {
+  border: none;
+  background: #a4a4a4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.exchange-table {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(rgba(136, 112, 5, 0.15), rgba(31, 24, 1, 0.15));
+}
+
+.echgtable-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.echgtable-layout div img {
+  width: 35px;
+  border-radius: 20px;
+}
+
+.echgtable-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1.5fr 3fr 3fr 2fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 0.4px solid #5a5757;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.echgtable-layout:hover {
+  transform: scale(1.001);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  border-bottom: none;
+}
+
+.echgtable-layout:last-child {
+  border: none;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spin {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 465px) {
+  .exchange input {
+    width: 55%;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .exchange button {
+    width: 35%;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .exchange form {
+    gap: 5px;
+    margin: 20px;
+  }
+
+  .volume {
+    display: none;
+  }
+
+  .site {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .echgtable-layout div img {
+    width: 25px;
+  }
+  .echgtable-layout {
+    font-size: 13px;
+  }
+  .exchange input {
+    width: 55%;
+    font-size: 14px;
+  }
+  .exchange button {
+    width: 35%;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .exchange form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .volume {
+    display: none;
+  }
+
+  .site {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .echgtable-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+
+  .volume {
+    display: none;
+  }
+
+  .site {
+    display: none;
+  }
+  .exchange input {
+    width: 10px;
+    width: 60%;
+  }
+  .exchange button {
+    width: 30%;
+    padding: 8px 12px;
+  }
+  .exchange form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}

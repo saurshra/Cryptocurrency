@@ -1,0 +1,152 @@
+.crypto {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+
+.crypto-table {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(rgba(136, 112, 5, 0.15), rgba(31, 24, 1, 0.15));
+}
+
+.table-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1.5fr 3fr 3fr 2fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 0.4px solid #5a5757;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table-layout:hover {
+  transform: scale(1.001);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  border-bottom: none;
+}
+.market-cap {
+  text-align: right;
+}
+
+.volume {
+  text-align: center;
+}
+.table-layout:last-child {
+  border: none;
+}
+
+.table-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-layout div img {
+  width: 35px;
+  border-radius: 20px;
+}
+
+.table-layout .green {
+  color: #097414;
+}
+
+.table-layout .red {
+  color: #a40505;
+}
+
+@media (max-width: 768px) {
+  .table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+  .market-cap {
+    display: none;
+  }
+  .volume {
+    display: none;
+  }
+  .crypto input {
+    width: 10px;
+    width: 60%;
+  }
+  .crypto button {
+    width: 30%;
+    padding: 8px 12px;
+  }
+
+  .crypto form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-layout div img {
+    width: 25px;
+  }
+  .table-layout {
+    font-size: 13px;
+  }
+  .crypto input {
+    width: 55%;
+    font-size: 14px;
+  }
+  .crypto button {
+    width: 35%;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .crypto form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+.crypto form {
+  background-color: rgb(225, 225, 225);
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 90px;
+}
+
+.crypto input {
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  flex: 1;
+  background-color: rgb(225, 225, 225);
+}
+
+.crypto button {
+  border: none;
+  background: #a4a4a4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 465px) {
+  .crypto input {
+    width: 55%;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .crypto button {
+    width: 35%;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .crypto form {
+    gap: 5px;
+    margin: 20px;
+  }
+}

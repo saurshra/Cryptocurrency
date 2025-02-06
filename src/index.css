@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  min-height: 100vh;
+  color: rgb(52, 50, 50);
+  background: linear-gradient(135deg, #ae8d1d, #d4af37, #edb346);
+}
+
+/* Light theme */
+body.light-theme .app {
+  min-height: 100vh;
+  color: rgb(52, 50, 50);
+  background: white;
+}
+body.light-theme .app .navbar option {
+  background-color: white;
+  color: black;
+}
+
+body.light-theme .app .navbar button {
+  background-color: rgb(236, 232, 232);
+  color: black;
+}
+
+/* Dark theme */
+/* body.dark-theme .app {
+  color: #f5f5f5;
+  background: linear-gradient(135deg, #5a4c1a, #7c631d, #ae8d1d);
+} */
+
+@media (max-width: 768px) {
+  .perfect {
+    padding-top: 150px;
+  }
+}
