@@ -48,8 +48,8 @@ const Coin = () => {
     fetchCoinChart();
   }, [currency]);
 
-  console.log(coinData);
-  console.log(coinChart);
+  // console.log(coinData);
+  // console.log(coinChart);
 
   if (coinData && coinChart) {
     return (

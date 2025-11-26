@@ -20,7 +20,7 @@ const Crypto = () => {
     setDisplayCoin(filterCoins);
     setInput("");
   };
-  console.log(allCoins);
+  //console.log(allCoins);
   useEffect(() => {
     setDisplayCoin(allCoins);
   }, [allCoins]);

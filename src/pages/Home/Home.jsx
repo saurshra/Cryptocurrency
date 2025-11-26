@@ -3,6 +3,7 @@ import "./Home.css";
 import logo from "../../assets/logo.png";
 
 const Home = () => {
+  // console.log("home is rendering");
   return (
     <div>
       <div className="hero">
